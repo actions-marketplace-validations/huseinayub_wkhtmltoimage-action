@@ -1,0 +1,17 @@
+name: "WKHTMLTOIMAGE Action"
+description: "WKHTMLTOIMAGE Action is a web recon action to render HTML into PDF and various image formats"
+branding:
+  icon: "activity"
+  color: "blue"
+
+inputs:
+  list:
+    description: "List of hosts to run WKHTMLTOIMAGE against"
+    required: true
+    default: ""
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - list=${{ inputs.list }}
