@@ -1,4 +1,4 @@
-name: "WKHTML2IMAGE"
+name: "jira-cli"
 description: "WKHTMLTOIMAGE Action is a web recon action to render HTML into PDF and various image formats"
 branding:
   icon: "activity"
